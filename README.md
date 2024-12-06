@@ -590,7 +590,6 @@ _switch statement_ https://javascript.info/switch
 
 #### 44> Asynchronous behaviour
 
-- Event loop: [click to open](src/Tutorials/eventLoop.md)
 - Async behavior and why we need Promises: [click to open](src/Tutorials/Asynchronous.md)
   - Promises variants: [click to open](src/Tutorials/PromiseVariant.js)
     - Promise.all
