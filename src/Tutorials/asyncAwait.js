@@ -152,6 +152,29 @@ try {
 // }
 // getMarriageApprovalUsingAwait()
 
+const promiseObj = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("resolved after 2ms");
+  }, 200);
+});
+
+(async () => {
+  try {
+    const res = await promiseObj;
+    if (typeof res === "string") {
+      console.log("string", res);
+      return;
+    }
+    if (typeof res === "number") {
+      console.log("number", res);
+    }
+  } catch (err) {
+    console.log(err.message);
+  } finally {
+    console.log("inside finally");
+  }
+})();
+
 let count = 0;
 function foo() {
   try {
